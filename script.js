@@ -1,15 +1,15 @@
-//your JS code here. If required.
+// your JS code here. If required.
 const squares = document.querySelectorAll(".square");
 squares.forEach((square) => {
-  square.addEventListener("mouseenter", function () {
+  square.addEventListener("mouseover", function () {
     squares.forEach((sq) => {
       sq.style.backgroundColor = "#6F4E37";
     });
-    this.style.backgroundColor = "#rgb(111, 78, 55)";
+    this.style.backgroundColor = "#E6E6FA";
   });
-  square.addEventListener("mouseleave", function () {
+  square.addEventListener("mouseout", function () {
     squares.forEach((sq) => {
-      sq.style.backgroundColor = "#rgb(111, 78, 55)";
+      sq.style.backgroundColor = "#E6E6FA";
     });
   });
 });
